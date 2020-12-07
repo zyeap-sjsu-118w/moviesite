@@ -1,0 +1,136 @@
+html, body{
+    font-family: 'Open Sans', sans-serif;
+    background: url("../images/movietheatre.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: white;
+}
+
+#main-header{
+    background-color:rgba(10,0,0,0.8);
+    text-align: center;
+}
+
+.header-img{
+    max-width: 200px;
+}
+
+#main-navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#main-navbar ul li a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: white;
+    padding-right: 30px;
+}
+
+#main-navbar ul li a:hover{
+    font-weight: bold;
+    color: lightcyan;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgba(10,0,0,0.8);
+    min-width: 160px;
+    box-shadow: 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    color: lightcyan;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    padding: 10px;
+}
+
+#movie-category{
+    color: white;
+    margin-top: 50px;
+    margin-left: 20px;
+    letter-spacing: 2px;
+}
+
+#viewer-category{
+    color: white;
+    margin-top: 50px;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    background-color:rgba(10,0,0,0.8);
+    width:560px;
+    align-self: right;
+}
+
+iframe{
+    float: right;
+    margin-right: 100px;
+}
+
+#viewer-category > h3 { display: inline-block; }
+
+#purchase-icons{
+    justify-content: space-evenly;
+}
+
+#movies{ 
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+#main-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#main-footer button{
+    background: grey;
+    color: white;
+    padding: 2px 5px;
+}
+
+#main-footer button:hover{
+    background: green;
+    cursor: pointer;
+}
+
+#about {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 100px;
+    background-color:rgba(10,0,0,0.8);
+    line-height: 2;
+}
+
+#about a {
+    color: lightgreen;
+}
+
+
+
+

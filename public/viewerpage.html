@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Night</title>
+    <link href="css\style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="main-header">
+        <a href="index.html"><img src="../images/logo.png" alt="site logo" class="header-img"></a>
+        <nav id="main-navbar">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown"><a href="#">Movie Categories</a>
+                    <div class="dropdown-content">
+                        <a href="action.html">Action</a>
+                        <a href="adventure.html">Adventure</a>
+                        <a href="romance.html">Romance</a>
+                        <a href="horror.html">Horror</a>
+                    </div>
+                </li>
+                <li><a href="Newreleases.html">New Releases</a></li>
+                <li><a href="watched_recently.html">Watched Recently</a></li>
+                <li><a href="login_functional.html" id="accountLink">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>{{title}}</h2>
+    {{trailer}}
+    <section id="viewer-category">
+        <h3>Synopsis</h3>
+        <a href="{{tomato}}"><img src="../images/rotten-tomatoes.png" height="50" width="90" alt="rotten-tomatoes" vertical-align="center" align="right"></a>
+        <p>{{synopsis}}</p>
+        <h4>Platform Links</h4>
+        <div id="purchase-icons">
+            <a href="{{amazon}}" target="_blank"><img src="../images/amazon.png" height="30" width="32" alt="Amazon"></a>
+            <a href="{{google}}" target="_blank"><img src="../images/youtube.png" height="30" width="50" alt="YouTube"></a>
+            <a href="{{apple}}" target="_blank"><img src="../images/apple.png" height="30" width="32" alt="iTunes"></a>
+        </div>
+    </section>
+</body>
+</html>

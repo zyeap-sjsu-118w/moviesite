@@ -1,0 +1,104 @@
+html, body{
+    font-family: 'Open Sans', sans-serif;
+    background: url("../images/movietheatre.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#main-header{
+    background-color:rgba(10,0,0,0.8);
+    text-align: center;
+}
+
+.header-img{
+    max-width: 200px;
+}
+
+#main-navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#main-navbar ul li a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: white;
+    padding-right: 30px;
+}
+
+#main-navbar ul li a:hover{
+    font-weight: bold;
+    color: lightcyan;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgba(10,0,0,0.8);
+    min-width: 160px;
+    box-shadow: 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    color: lightcyan;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    padding: 10px;
+}
+
+#login-form{
+    background-color: rgba(10,0,0,0.8);
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+}
+
+#login-form > label {
+    margin-bottom: 10px;
+}
+
+#login-form > input {
+    width: 50%;
+    margin: 10px auto;
+    font-size: 1.2em;
+}
+
+#submitbtn {
+    width: 30%;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: black;
+    padding: 10px;
+    background-color: lightgreen;
+}
+
+#submitbtn:hover {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+
+#registerlink{
+    color: lightgreen;
+}

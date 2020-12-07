@@ -1,0 +1,48 @@
+body                    {background-image: url("../images/theater.jpg");
+                         background-size: cover;
+                         background-repeat: no-repeat;
+                         background-position: center;
+                         background-color: darkred;
+                         margin: 0;
+                         padding: 0;
+                         height: 100%;}
+.center                 {display:block;
+                         margin-left:auto;
+                         margin-right:auto;
+                         width:20%;}
+.login-page             {max-width: auto;
+                         padding: 40px auto;
+                         margin: 40px auto;}
+.form                   {background-color:white; 
+                         padding: 40px; 
+                         max-width: 800px;
+                         margin: 40px auto;
+                         box-shadow:0 4px 10px 4px rgba(form-bg,.3) 
+                         margin: 0 auto;
+                         width: 300px;}
+label                   {color: green;
+                         font-family: Arial, Helvetica, san-serif;
+                         font-weight: bold;
+                         display: block;
+                         text-align: center;}
+input[type="email"]     {background-color:lightgrey;
+                         width:100%;
+                         padding: 12px 20px; 
+                         margin: 8px 0;
+                         box-sizing:border-box;
+                         border:1px lightgrey}    
+input[type="password"]  {background-color:lightgrey;
+                         width:100%;
+                         padding: 12px 20px; 
+                         margin: 8px 0;
+                         box-sizing:border-box;
+                         border:1px lightgrey}                
+input[type="submit"]    {background-color:teal;
+                         border:none;
+                         color:white;
+                         font-weight:bold;
+                         padding: 16px 32px;
+                         margin: 4px 2px;
+                         text-decoration: none;
+                         width:100%;
+                         cursor: pointer;}

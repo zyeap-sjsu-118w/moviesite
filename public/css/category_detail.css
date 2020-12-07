@@ -1,0 +1,86 @@
+html, body{
+    font-family: 'Open Sans', sans-serif;
+    background: url("/images/movietheatre.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#main-header{
+    text-align: center;
+}
+
+#container {
+    background-color:rgba(10,0,0,0.8);
+    min-height: 100%;
+}
+
+.header-img{
+    max-width: 200px;
+}
+
+#main-navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#main-navbar ul li a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: white;
+    padding-right: 30px;
+}
+
+#main-navbar ul li a:hover{
+    font-weight: bold;
+    color: lightcyan;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgba(10,0,0,0.8);
+    min-width: 160px;
+    box-shadow: 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    color: lightcyan;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    padding: 10px;
+}
+
+.movie-details {
+    color: white;
+    padding: 20px;
+    
+}
+
+.trailer {
+    margin: auto 20px;
+    width: 50%;
+}
+
+.summary {
+    display: inline-block;
+    max-width: 20%;
+    font-size: 1.2em;
+    text-align: start;
+}

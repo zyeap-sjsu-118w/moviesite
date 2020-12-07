@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Site Login</title>
+    <link href="css/login_f.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="main-header">
+        <a href="index.html"><img src="../images/logo.png" alt="site logo" class="header-img"></a>
+        <nav id="main-navbar">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown"><a href="#">Movie Categories</a>
+                    <div class="dropdown-content">
+                        <a href="action.html">Action</a>
+                        <a href="adventure.html">Adventure</a>
+                        <a href="romance.html">Romance</a>
+                        <a href="horror.html">Horror</a>
+                    </div>
+                </li>
+                <li><a href="Newreleases.html">New Releases</a></li>
+                <li><a href="watched_recently.html">Watched Recently</a></li>
+                <li><a href="login_functional.html" id="accountLink">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form id="login-form">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="useremail" required>
+
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" required>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required> 
+
+        <button type="submit" id="submitbtn">Login</button>
+
+        <p>Click <a href="register.html" id="registerlink">here</a> to register for an account</p>
+
+        <script type="text/javascript">
+            const form1 = document.getElementById("login-form");
+            form1.addEventListener("submit", (e)=>{
+              e.preventDefault();
+              const request = new XMLHttpRequest();   
+              request.open("post", "/login");   
+              request.onload = function(){    
+                const json = JSON.parse(request.response);
+                if (json.success){
+                  window.location.href = 'index.html';   
+                }
+                else{
+                  window.alert(json.message);   
+                }
+              }
+              var data = {
+                email: document.getElementById("useremail").value,
+                username: document.getElementById("username").value,
+                password: document.getElementById("password").value
+              }
+              request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");   
+              request.send(JSON.stringify(data)); 
+            })
+          </script>
+    </form>
+</body>
+</html>
